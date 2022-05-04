@@ -1,11 +1,13 @@
 <?php
 /*
  *Classe Teste_arbaro
-* Testa a criação de um objeto
+* Testa a criaï¿½ï¿½o de um objeto
 * barbaro.
 * @author Mackon Rangel
 * @date 26/07/2015
 */
+require "class/classes/barbaro.class.php";
+
 class Teste_barbaro extends Test{
 	
 	function __construct($nivel){
@@ -13,6 +15,7 @@ class Teste_barbaro extends Test{
 	}
 	
 	public function main($nivel){
+		
 		$brb = new  Barbaro();
 		$brb->dgd_testes_de_resistencia($nivel);
 		$testes = array(

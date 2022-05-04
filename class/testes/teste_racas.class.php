@@ -1,13 +1,15 @@
 <?php
 /*
- * Classe de teste para Raças
- * Instancia uma raça de forma aleatória
- * e através do nome da raça, é definida o
+ * Classe de teste para Raï¿½as
+ * Instancia uma raï¿½a de forma aleatï¿½ria
+ * e atravï¿½s do nome da raï¿½a, ï¿½ definida o
  * peso, idade, altura e deslocamento do personagem.
  * Dungeons and Dragons.
  * @author Mackon Rangel
  * @date 23/06/2015
  */
+require "class/racas/racas.class.php";
+
 class Teste_racas extends Test{
 	
 	function __construct($sexo){

@@ -1,10 +1,17 @@
 <?php
 /*
  * Class Teste_personagem
- * CLasse de teste para criação de um personagem
+ * CLasse de teste para criaï¿½ï¿½o de um personagem
  * @author Mackon Rangel
  * @date 09/05/2015
 */
+require "testes/test.class.php";
+require "testes/tags.class.php";
+require "testes/teste_barbaro.class.php";
+require "personagem/personagem.class.php";
+require "class/testes/teste_racas.class.php";
+require "algoritmos/atributos.class.php";
+
 
 class Teste_personagem extends Test{
 	
@@ -15,7 +22,7 @@ class Teste_personagem extends Test{
 	/*
 	 * 	Metodo main()
 	 * 	Metodo principal da classe Teste_personagem
-	 * 	Testa a criação de um personagem
+	 * 	Testa a criaï¿½ï¿½o de um personagem
 	 */
 	
 	public function main(){
@@ -77,7 +84,7 @@ class Teste_personagem extends Test{
 					'forca'=>$attr->forca.' '.$attr->dgd_modificador($attr->forca),
 					'destreza'=>$attr->destr.' '.$attr->dgd_modificador($attr->destr),
 					'Constituicao'=>$attr->const.' '.$attr->dgd_modificador($attr->const),
-					'Inteligência'=>$attr->intel.' '.$attr->dgd_modificador($attr->intel),
+					'Inteligï¿½ncia'=>$attr->intel.' '.$attr->dgd_modificador($attr->intel),
 					'Sabedoria'=>$attr->sabed.' '.$attr->dgd_modificador($attr->sabed),
 					'Carisma'=>$attr->caris.' '.$attr->dgd_modificador($attr->caris)
 						)

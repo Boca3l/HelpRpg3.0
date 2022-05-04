@@ -7,8 +7,9 @@
 <?php
 if(file_exists('init.php')):
 	require 'init.php';
+	require 'class/teste_personagem.class.php';
 	$teste_personagem = new Teste_personagem();
 else:
-	echo 'Arquivo init.php não encontrado.';
+	echo 'Arquivo init.php nï¿½o encontrado.';
 endif;
 ?>

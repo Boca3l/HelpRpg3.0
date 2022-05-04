@@ -1,11 +1,13 @@
 <?php
 /*
  * Class Racas
- * CLasse responsável por definira a raça do personagem 
- * e as características que esta raça possui
+ * CLasse responsï¿½vel por definira a raï¿½a do personagem 
+ * e as caracterï¿½sticas que esta raï¿½a possui
  * @author Mackon Rangel
  * @date 09/05/2015
  */
+
+require "interface/iracas.php";
 
 class Racas implements IRacas{
 
@@ -19,7 +21,7 @@ class Racas implements IRacas{
 		if($propriedade):
 			$this->atributos[$propriedade] = $valor;
 		else:
-			echo 'Parametro não Informado.';
+			echo 'Parametro nï¿½o Informado.';
 		endif;
 	}
 
@@ -27,7 +29,7 @@ class Racas implements IRacas{
 		if($propriedade):
 			return $this->atributos[$propriedade];
 		else:
-			echo 'Parametro não Informado.';
+			echo 'Parametro nï¿½o Informado.';
 		endif;
 	}
 	
@@ -36,13 +38,13 @@ class Racas implements IRacas{
 	 * Este metodo vai inicializar o atributo racas
 	 * com o nome de uma raca de forma aleatoria
 	 * @param $sexo = o nome de um sexo para definir
-	 * o nome da raça conforme o sexo do personagem. 
+	 * o nome da raï¿½a conforme o sexo do personagem. 
 	 */
 	function dgd_raca($sexo){
 		if($sexo == 'Masculino'):
-			$racas = array("Humano","Anão","Elfo","Gnomo","Meio elfo","Meio orc","Halfling");
+			$racas = array("Humano","Anï¿½o","Elfo","Gnomo","Meio elfo","Meio orc","Halfling");
 		elseif($sexo == 'Feminino'):
-			$racas = array("Humana","Anã","Elfa","Gnoma","Meio elfa","Meio orc","Halfling");
+			$racas = array("Humana","Anï¿½","Elfa","Gnoma","Meio elfa","Meio orc","Halfling");
 		endif;
 		$escolido = rand(0, count($racas)-1);
 		$this->raca = $racas[$escolido];
@@ -51,8 +53,8 @@ class Racas implements IRacas{
 	/*
 	 * dgd_deslocamento()
 	 * Inicializa um atributo de deslocamento que 
-	 * varia com a raça do personagem.
-	 * @param raca = a raça do personagem
+	 * varia com a raï¿½a do personagem.
+	 * @param raca = a raï¿½a do personagem
 	 */
 	function dgd_deslocamento($raca){
 		switch($raca):
@@ -65,7 +67,7 @@ class Racas implements IRacas{
 			case "Gnoma": $this->deslocamento = "6 m ";
 			break;
 				
-			case "Anã": $this->deslocamento = "6 m ";
+			case "Anï¿½": $this->deslocamento = "6 m ";
 			break;
 				
 			default : $this->deslocamento = "9 m ";
@@ -75,8 +77,8 @@ class Racas implements IRacas{
 	/*
 	 * dgd_altura()
 	 * Determina a altura de um personagem baseado 
-	 * em sua raça.
-	 * @param $raca = raça do personagem.
+	 * em sua raï¿½a.
+	 * @param $raca = raï¿½a do personagem.
 	 */
 	
 	function dgd_altura($raca){
@@ -130,7 +132,7 @@ class Racas implements IRacas{
 				"1,70 m"
 		);
 		
-		$racas = array("Humano","Anão","Elfo","Gnomo","Meio elfo","Meio orc","Halfling","Humana","Anã","Elfa","Gnoma","Meio elfa");
+		$racas = array("Humano","Anï¿½o","Elfo","Gnomo","Meio elfo","Meio orc","Halfling","Humana","Anï¿½","Elfa","Gnoma","Meio elfa");
 		$alturas = array($humano,$anao,$elfo,$gnomo,$meioElfo,$meioOrc,$halfling,$humano,$anao,$elfo,$gnomo,$meioElfo);
 		
 		for($i=0; $i<count($racas); $i++):
@@ -145,8 +147,8 @@ class Racas implements IRacas{
 	/*
 	 * dgd_peso()
 	 * Inicializa o atributo peso conforme a
-	 * raça do personagem passada por parametro
-	 * @raca = raça do personagem
+	 * raï¿½a do personagem passada por parametro
+	 * @raca = raï¿½a do personagem
 	 */
 	function dgd_peso($raca){		
 		$humano = array ("60kg","61kg","62kg","63kg","64kg","65kg","66kg","67kg","68kg","69kg",
@@ -177,7 +179,7 @@ class Racas implements IRacas{
 				"50kg","51kg","52kg","53kg","54kg","55kg","56kg","57kg","58kg","59kg",
 				"60kg","61kg","62kg","63kg","64kg","65kg");
 		
-		$racas = array("Humano","Anão","Elfo","Gnomo","Meio elfo","Meio orc","Halfling","Humana","Anã","Elfa","Gnoma","Meio elfa");
+		$racas = array("Humano","Anï¿½o","Elfo","Gnomo","Meio elfo","Meio orc","Halfling","Humana","Anï¿½","Elfa","Gnoma","Meio elfa");
 		$peso = array($humano,$anao,$elfo,$gnomo,$meioElfo,$meioOrc,$halfling,$humano,$anao,$elfo,$gnomo,$meioElfo);
 		
 		for($i=0; $i<count($racas); $i++):
@@ -192,12 +194,12 @@ class Racas implements IRacas{
 	/*
 	 * dgd_idade()
 	 * Inicializa o atributo idade conforme 
-	 * a raça do personagem que é passada por parametro.
-	 * @param $raca = raça do personagem
+	 * a raï¿½a do personagem que ï¿½ passada por parametro.
+	 * @param $raca = raï¿½a do personagem
 	 */
 	
 	function dgd_idade($raca){
-		$racas = array("Humano","Anão","Elfo","Gnomo","Meio elfo","Meio orc","Halfling","Humana","Anã","Elfa","Gnoma","Meio elfa");
+		$racas = array("Humano","Anï¿½o","Elfo","Gnomo","Meio elfo","Meio orc","Halfling","Humana","Anï¿½","Elfa","Gnoma","Meio elfa");
 		$idade = array(rand(15,100),rand(35,600),rand(85,1200),rand(30,400),rand(15,500),rand(10,85),rand(15,200),rand(15,100),rand(35,600),rand(85,1200),rand(30,400),rand(15,500));
 		
 		for($i=0; $i<count($racas); $i++):

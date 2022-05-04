@@ -6,6 +6,9 @@
 * @author Mackon Rangel
 * @date 26/07/2015
 */
+require "classes.class.php";
+require "class/algoritmos/testes_de_resistencia.class.php";
+
 class Barbaro extends Classes{
 	
 	function __construct(){
@@ -43,26 +46,26 @@ class Barbaro extends Classes{
 	*/
 	function dgd_talentos(){
 		$this->talentos = array(	
-							  "Movimento Rápido, analfabetismo, fúria 1/dia",
+							  "Movimento Rï¿½pido, analfabetismo, fï¿½ria 1/dia",
 							  "Esquiva sobrenatural",
 							  "Sentir armadilhas +1",
-				 			  "Fúria 2/dia",
+				 			  "Fï¿½ria 2/dia",
 							  "Esquiva sobrenatural aprimorada",
 							  "Sentir armadilhas +2",
-				 			  "Redução de dano 1/-",
-							  "Fúria 3/dia",
+				 			  "Reduï¿½ï¿½o de dano 1/-",
+							  "Fï¿½ria 3/dia",
 							  "Sentir armadilhas +3",
-							  "Redução de dano 2/-",
-							  "Fúria maior",
-							  "Fúria 4/dia, sentir armadilhas +4",
-				 			  "Redução de dano 3/-",
-							  "Vontade inabalável",
+							  "Reduï¿½ï¿½o de dano 2/-",
+							  "Fï¿½ria maior",
+							  "Fï¿½ria 4/dia, sentir armadilhas +4",
+				 			  "Reduï¿½ï¿½o de dano 3/-",
+							  "Vontade inabalï¿½vel",
 							  "Sentir armadilhas +5",
-							  "Redução de dano 4/-, fúria 5/dia",
-				 			  "Fúria incansável",
+							  "Reduï¿½ï¿½o de dano 4/-, fï¿½ria 5/dia",
+				 			  "Fï¿½ria incansï¿½vel",
 							  "Sentir armadilhas +6",
-							  "Redução de dano 5/-",
-							  "Fúria poderosa, fúria 6/dia"
+							  "Reduï¿½ï¿½o de dano 5/-",
+							  "Fï¿½ria poderosa, fï¿½ria 6/dia"
 						);
 	}
 	
@@ -81,10 +84,10 @@ class Barbaro extends Classes{
 				array(
 						"Saltar (For)", 
 						"Escalar (For)", 
-						"Intimidação (Car)",
-						"Sobrevivência (Sab)",
-						"Natação (For)", 
-						"Ofícios (Int)", 
+						"Intimidaï¿½ï¿½o (Car)",
+						"Sobrevivï¿½ncia (Sab)",
+						"Nataï¿½ï¿½o (For)", 
+						"Ofï¿½cios (Int)", 
 						"Ouvir (Sab)", 
 						"Cavalgar (Des)",
 						"Adestrar Animais (Car)"
@@ -93,32 +96,32 @@ class Barbaro extends Classes{
 		$this->pericias_nbrb = 
 				array(
 						"Observar (Sab)",
-						"Profissão (Sab)",
+						"Profissï¿½o (Sab)",
 						"Esconder-se (Des)",
 						"Furtividade (Des)",
 						"Abrir Fechaduras (Des)", 
 						"Acrobacia (Des)", 
 						"Arte da Fuga (Des)", 
-						"Atuação (Car)",
-						"Avaliação (Int)" ,
+						"Atuaï¿½ï¿½o (Car)",
+						"Avaliaï¿½ï¿½o (Int)" ,
 						"Blefar (Car)", 
 						"Conhecimento (local) (Int)", 
 						"Decifrar Escrita (Int)", 
 						"Diplomacia (Car)",
 						"Disfarces (Car)", 
-						"Equilíbrio (Des)",
+						"Equilï¿½brio (Des)",
 						"Esconder-se (Des)", 
-						"Falsificação (Int)", 
+						"Falsificaï¿½ï¿½o (Int)", 
 						"Furtividade (Des)",
-						"Intimidação (Car)", 
+						"Intimidaï¿½ï¿½o (Car)", 
 						"Observar (Sab)", 
-						"Obter Informação (Car)", 
+						"Obter Informaï¿½ï¿½o (Car)", 
 						"Operar Mecanismo (Int)", 
-						"Prestidigitação (Des)",
+						"Prestidigitaï¿½ï¿½o (Des)",
 						"Procurar (Int)",  
-						"Sentir Motivação (Sab)", 
+						"Sentir Motivaï¿½ï¿½o (Sab)", 
 						"Usar Cordas (Des)", 
-						"Usar Instrumento Mágico (Car)"
+						"Usar Instrumento Mï¿½gico (Car)"
 					);
 		
 	}

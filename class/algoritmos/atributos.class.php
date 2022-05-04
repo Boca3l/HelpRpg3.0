@@ -1,7 +1,7 @@
 <?php
 /*
  * Classe Atributos
- * Esta classe prover métodos para geração de 
+ * Esta classe prover mï¿½todos para geraï¿½ï¿½o de 
  * valores de habilidade base de uma ficha de RPG
  * Dungeons and Dragons.
  * @author Mackon Rangel
@@ -19,7 +19,7 @@ class Atributos{
 		if($propriedade):
 			$this->propriedades[$propriedade] = $valor;
 		else:
-			echo 'Parametro não Informado.';
+			echo 'Parametro nï¿½o Informado.';
 		endif;
 	}
 	
@@ -27,17 +27,17 @@ class Atributos{
 		if($propriedade):
 			return $this->propriedades[$propriedade];
 		else:
-			echo 'Parametro não Informado.';
+			echo 'Parametro nï¿½o Informado.';
 		endif;
 	}
 	
 	/*
 	 * Metodo dgd_habilidades()
-	 * Prover a simulação de uma rolagem de 4 dados de 6 faces
-	 * descartando o menor número.
-	 * @param nivel = Nível do personagem
+	 * Prover a simulaï¿½ï¿½o de uma rolagem de 4 dados de 6 faces
+	 * descartando o menor nï¿½mero.
+	 * @param nivel = Nï¿½vel do personagem
 	 */
-	function dgd_habilidades(){
+	function dgd_habilidades($bonus){
 		do{
 			$rol_1 = rand(1, 6);
 			$rol_2 = rand(1, 6);

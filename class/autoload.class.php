@@ -1,14 +1,14 @@
 <?php
 /*
  * Classs Autoload
- * Carrega todas as classes em tempo de execução no sistema
+ * Carrega todas as classes em tempo de execuï¿½ï¿½o no sistema
  * @author Mackon Rangel
  */
 
 final class Autoload{
 	
-	function __construct(){
-		function __autoload($classname){
+	//function __construct(){
+		function spl_autoload_register($classname){
 			if(file_exists("class/{$classname}.class.php")):
 				require "class/{$classname}.class.php";
 			elseif(file_exists("class/classes/{$classname}.class.php")):
@@ -26,6 +26,6 @@ final class Autoload{
 			endif;
 			
 		}
-	}
+	//}
 }
 ?>
